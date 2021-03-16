@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -47,7 +47,7 @@ const Header = ({ siteTitle, siteDesc }) => (
           </h2>
         </div>
       </div>
-      
+
       <nav className="primary-nav">
         <Link to="/" activeClassName="active">Home</Link>
         <Link to="/blog" activeClassName="active">Blog</Link>

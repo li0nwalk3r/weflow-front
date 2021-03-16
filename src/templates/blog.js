@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "gatsby"
+import {Link} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,12 +13,26 @@ const Blog = ({ pageContext }) => {
         return dateObj.toLocaleDateString()
     }
 
+    const data = useStaticQuery(graphql`
+        query MyQuery {
+            users(first: 1) {
+                edges {
+                    node {
+                        id
+                        email
+                        firstName
+                    }
+                }
+            }
+        }`
+    );
+
     return (
         <Layout>
             <SEO title="Blog" />
             <h1>Blog</h1>
+            {JSON.stringify("user data", data)}
 
-            {
                 posts.map(post => (
                     <article className="card post-card" id={`post-${post.id}`} key={post.id}
                         style={{
@@ -51,7 +65,7 @@ const Blog = ({ pageContext }) => {
                     </article>
                 ))
             }
-            
+
         </Layout>
     )
 }
