@@ -1,3 +1,7 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/li0nwalk3r/weflow-front)
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/li0nwalk3r/weflow-front)
+
 # gatsby-starter-headless-wordpress
 
 With this Gatsby.js starter template, you can get up and running quickly and easily with a Gatsby site that pulls database from a WordPress site that you have control over.
